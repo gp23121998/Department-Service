@@ -19,7 +19,7 @@ public class DepartmentServiceImp implements DepartmentService {
     @Autowired
     private RestTemplate restTemplate;
 
-    @Value("http://localhost:8100/employees/departmentid/")
+    @Value("${employeeInfoAPI}")
     private String baseUrl;
 
     @Autowired
